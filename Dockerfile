@@ -17,7 +17,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # पहले स्टेप में बनी JAR फाइल को कॉपी करें
-COPY --from=build /usr/src/app/target/Blood-Donation-Backend-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /usr/src/app/target/Life-Saviour-0.0.1-SNAPSHOT.jar app.jar
 
 # पोर्ट एक्सपोज करें
 EXPOSE 8082

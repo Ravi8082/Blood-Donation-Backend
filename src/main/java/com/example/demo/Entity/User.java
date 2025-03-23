@@ -1,15 +1,21 @@
 package com.example.demo.Entity;
 
+
+
 import com.example.demo.Enum.Role;
+
 import lombok.*;
+import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
+
 @Entity
 @Table(name = "users")
-@Getter
+
 @Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
@@ -22,7 +28,6 @@ public class User {
 
     @Column(nullable = false, unique = true)
     @NotBlank(message = "Email is required")
-    @Email(message = "Invalid email format")
     @Email(regexp = "^[a-zA-Z0-9._-]+@(gmail\\.com|yahoo\\.com|outlook\\.com)$", message = "Please use a valid Gmail, Yahoo, or Outlook email")
     private String email;
 

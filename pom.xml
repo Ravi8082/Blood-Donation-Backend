@@ -139,6 +139,12 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>6.2.5.Final</version> <!-- Java 8 Compatible -->
 		</dependency>
+		<dependency>
+                       <groupId>org.postgresql</groupId>
+                       <artifactId>postgresql</artifactId>
+                       <version>42.5.0</version>
+                </dependency>
+
 
 		<!-- Jakarta Validation API -->
 		<dependency>

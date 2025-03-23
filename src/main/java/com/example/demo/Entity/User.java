@@ -5,7 +5,8 @@ package com.example.demo.Entity;
 import com.example.demo.Enum.Role;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id; // Correct import for JPA
+
 
 import javax.persistence.*;
 import javax.validation.constraints.*;

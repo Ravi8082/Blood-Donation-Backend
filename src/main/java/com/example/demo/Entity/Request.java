@@ -48,8 +48,8 @@ public class Request {
     @Max(value = 100, message = "Age must be below 100")
     private int age;
 
-    @NotBlank(message = "Status is required")
-    @Pattern(regexp = "^(Pending|Approved|Rejected)$", message = "Status must be Pending, Approved, or Rejected")
+    // @NotBlank(message = "Status is required")
+    // @Pattern(regexp = "^(Pending|Approved|Rejected)$", message = "Status must be Pending, Approved, or Rejected")
     private String status;
 
     public Request() {

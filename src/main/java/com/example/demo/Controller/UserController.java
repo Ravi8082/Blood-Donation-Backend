@@ -23,7 +23,7 @@ import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 @RestController
-@CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+@CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
 public class UserController {
 
     @Autowired

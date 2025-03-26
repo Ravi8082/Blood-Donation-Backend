@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+@CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
 public class DonorController
 {
     @Autowired
@@ -61,7 +61,7 @@ public class DonorController
     }
 
     @GetMapping("/donorlist")
-    @CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+    @CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
     public ResponseEntity<List<Donor>> getDonors() throws Exception
     {
         List<Donor> donors = donorService.getAllDonors();
@@ -83,7 +83,7 @@ public class DonorController
     }
 
     @GetMapping("/bloodDetails")
-    @CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+    @CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
     public ResponseEntity<List<BloodDetails>> getBloodDetails() throws Exception
     {
         List<Donor> bloodDetails = donorService.getBloodDetails();
@@ -156,7 +156,7 @@ public class DonorController
     }
 
     @GetMapping("/getTotalUnits")
-    @CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+    @CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
     public ResponseEntity<List<Integer>> getTotalUnits() throws Exception
     {
         List<Donor> bloodDetails = donorService.getBloodDetails();
@@ -177,7 +177,7 @@ public class DonorController
     }
 
     @GetMapping("/getTotalDonationCount/{email}")
-    @CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+    @CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
     public ResponseEntity<List<Integer>> getTotalDonationCount(@PathVariable String email) throws Exception
     {
         List<Donor> donors = donorService.getAllDonors();
@@ -200,7 +200,7 @@ public class DonorController
 
 
     @GetMapping("/getUserProfile/{email}")
-    @CrossOrigin(origins = "https://blood-donation-frontended-7.onrender.com")
+    @CrossOrigin(origins = "https://blood-donation-frontended-8.onrender.com")
     public ResponseEntity<User> getUserProfile(@PathVariable String email) {
         User user = registrationService.getUserByEmail(email.trim());
         if (user == null) {
